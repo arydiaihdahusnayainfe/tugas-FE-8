@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/aset/image/png/gambar2.png);
+    min-height: 100vh;
+    background-size: cover;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.menus{
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    font-size: 3rem;
+    color:rgb(99, 142, 62) ;
+    z-index: 1;
+}
+
+              
+span.menus {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    20% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+              
+
+div.judul{
+    text-align: center;
+
+}
+
+.rect-fadeRight {
+    animation: fadeRight 4s ease;
+  }
+          
+  @keyframes fadeRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(200px);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(-100px);
+    }
+    100% {
+      opacity: 2;
+      transform: translateX(0px);
+    }
+}
+
+h2.judul2 {
+    font-family: 'Leckerli One', cursive;
+    font-weight: 300;
+    font-size: 25px;
+    color: rgb(99, 142, 62);
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 3rem ;
+    letter-spacing: 5px;
+}
+.rect-fadeLeft {
+    animation: fadeLeft 4s ease;
+  }
+          
+  @keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(500px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(-200px);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+    100% {
+      opacity: 2;
+      transform: translateX(0px);
+    }
+}
+
+button.explore{
+    
+    padding: 15px 30px;
+    outline: 2px solid rgb(103, 142, 62);
+    outline-offset: 4px;
+    border: none;
+    background-color: rgb(103, 142, 62);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+button.explore {
+    animation-name: pulse;
+    animation-duration: 4s;
+  }
+  
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+button.explore:hover{
+    background-color: #beed8c;
+    color: #678e3e;
+    transition:0.5s ;
+    cursor: pointer;
+}
+
+div.section-article{
+    background-color: rgba(232, 245, 245, 0.945);
+    border-top : 4px solid rgba(0, 128, 0, 0.788) ;
+
+}
+
+section.article{
+    display: flex;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Catamaran', sans-serif;
+    margin: 0 1 0 1rem;
+   
+}
+
+div.articles{
+    width: 25%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.section-header{
+    font-size: 13px;
+    margin: 0px 0px 12px;
+    letter-spacing: 4px;
+}
+.section-pg{
+    font-size: small;
+    color: #617d98;
+}
+span.icon-article{
+    color: rgba(0, 128, 0, 0.788);
+    margin: 0px 0px 20px;
+    font-size: 2rem;
+}
+          
+.transUp{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.transColor:hover{
+    background-color: white;
+    border-bottom: 3px solid rgb(103, 142, 62);   
+    transition: all 500ms linear;
+    cursor:help;
+}
+
+.transColor:hover .transUp{
+    transform: translatey(-10px);
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px); 
+    
+}
+
+              
+
+        /* section 2 : info */
+
+.section-about-info{
+    display: flex;
+    width: 100%;
+    height: 22rem;
+    padding: 25px 0px;
+    margin-top: 50px;
+}
+
+.about{
+    width: 50%;
+    cursor: progress;
+
+}
+
+.image-about{
+    width: 24rem;
+    border: 6px solid rgba(0, 128, 0, 0.788);
+    margin: auto;
+    overflow: hidden;
+    background-color: #678e3e;
+
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+img.image-about-zoom{
+    transition: all 0.5s;
+}
+img.image-about-zoom:hover{
+    transform: scale(1.2);
+
+    opacity: 0.5;
+}
+article.about{
+    padding: 10px 50px 10px 10px;
+}
+div.judul-about{
+    font-size: 25px;
+    padding-right: 70px;
+    margin-bottom: 20px;
+}
+.judul-about>h4{
+    font-family: 'Leckerli One', cursive;
+    font-weight: lighter;
+    color: rgba(0, 128, 0, 0.788);
+    
+}
+.judul-about>h3{
+    font-family: 'Fira Sans Condensed', sans-serif ;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+p.article-about{
+    margin: 0px 100px 20px 0px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    color: #617d98
+}
+article.about>button{
+    padding: 6px 12px;
+    background-color: rgb(103, 142, 62);
+    color: white;
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    border: 0px;
+    text-align: center;
+}
+article.about>button:hover{
+    background-color: #beed8c;
+    color: #678e3e;
+    transition:0.5s ;
+    cursor: pointer;
+}
+
+    /* section 3 : check out */
+section.checkout-product{
+    background-color:rgba(232, 245, 245, 0.945) ;
+}
+
+div.judul-checkout>h4{
+    font-family: 'Leckerli One', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(0, 128, 0, 0.788);
+}
+
+div.judul-checkout>h3{
+    font-family: 'Fira Sans Condensed', sans-serif ;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+.section-about-product{
+    display: flex;
+    justify-content: stretch;
+    padding: 70px 50px;
+    width: 100%;
+    height: 25rem;
+}
+
+h5{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 12px;
+}
+h5.product-judul{
+    margin-top: 15px;
+}
+h5.product-harga{
+    color: rgba(0, 128, 0, 0.788);
+}
+
+p.article-about-checkout{
+    margin: 20px 10px 20px 0px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: small;
+    font-weight: 400;
+    color: #617d98;
+}
+
+div.about-product-checkout>button{
+    padding: 6px 12px;
+    background-color: rgb(103, 142, 62);
+    color: white;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: normal;
+    border: 0px;
+    text-align: center;
+}
+div.about-product-checkout>button:hover{
+    background-color: #beed8c;
+    color: #678e3e;
+    transition:0.5s ;
+    cursor: pointer;
+}
+article.about-product{
+    width: 100%;
+}
+
+.about-product-checkout{
+    width:100%;
+}
+
+.about-product-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.image-product{
+    width: 10rem;
+    height: 10rem;
+    margin: 15px;
+
+}
+div.image-product>img{
+    display: block;
+    width: 100%;
+    height:120%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* <!-- section 4 : explore our services --> */
+
+section.explore-our-services
+.explore-our-services-container{
+    text-align: center;
+    width: 100%;
+    height: 35rem;
+}
+
+div.explore-our-services-container{
+    padding: 50px 20px 0px ;
+}
+div.explore-our-services-tittle>h4{
+    font-family: 'Leckerli One', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0, 128, 0, 0.788);
+}
+
+div.explore-our-services-tittle>h3{
+    font-family: 'Fira Sans Condensed', sans-serif ;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+              
+article>div.grow{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+div.grow:hover{
+    transform: scale3d(1.1, 1.1, 0.3);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: progress;
+}
+          
+/* kartu 3 our services */
+
+article.card-image-services-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    
+}
+
+div.card-image-services{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+    border: none;
+    border-radius: 20px;
+    width: 25%;
+    height: 22rem;
+    margin: 0px 10px;
+    background-color:#f1f5f8;
+}
+div.card-image-services>img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+div.card-image-services>span.icon-services{
+    border: 5px solid #f1f5f8;
+    background-color: #beed8c;
+    color: #678e3e;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 25px;
+    position: relative;
+    bottom: 10px;
+}
+div.card-image-services>h6{
+    font-family: 'Fira Sans Condensed', sans-serif ;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 5px 0px;
+
+}
+
+div.card-image-services>p{
+    padding: 0px 18px;
+    margin-bottom: 20px;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 15px;
+    font-size: 12px;
+    color: #617d98;
+}
+
+div.card-image-services>button{
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: rgb(103, 142, 62);
+    color: white;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    border: 0px;
+    text-align: center;
+}  
+div.card-image-services>button:hover{
+    background-color: #beed8c;
+    color: #678e3e;
+    transition:0.5s ;
+    cursor: pointer;
+}
+    /* section 5 : info */
+
+section.section-info-container{
+    width: 100%;
+    background-color: #f1f5f8;
+    display: flex;
+    padding: 5rem 0;
+}
+div.section-info-bungkusan{
+    width: 50%;
+    margin: 0rem 0rem 3rem 10rem;  
+}
+
+div.section-about{
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 2px;
+}
+div.section-about>h4>span.icon{
+    font-size: 13px;
+}
+div.section-about>h4.section-about-tittle{
+    font-weight: 200;
+    color: #678e3e;
+}
+div.section-about>h4.section-about-content{
+    font-weight: 600;
+}
+
+    /* section 5 : Contact Us */
+
+form.form-contactus-container{
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    width: 50rem;
+    margin: 0rem 5rem 0rem 0rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.form-input{
+    margin-left:2rem ;
+}
+form.form-contactus-container>h3{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 2px;
+    color: #617d98;
+}
+form.form-contactus-container>div.form-input>input{
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+    height: 2rem;
+    margin-top: 10px;
+    background-color: #f1f5f8;
+    border: none;
+    letter-spacing: 2px;
+    
+}
+form.form-contactus-container>div.form-input>textarea{
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom:1rem ;
+    background-color: #f1f5f8;
+    border: none;
+    letter-spacing: 2px;
+}
+
+form.form-contactus-container>button{
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(103, 142, 62);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    border: 0px;
+    text-align: center;   
+}
+form.form-contactus-container>button:hover{
+    background-color: #beed8c;
+    color: #678e3e;
+    transition:0.5s ;
+    cursor: pointer;
+}
+
+    /* section 6 : footer */
+
+footer{
+    padding: 4rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+div.icon-footer{
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 8px;
+    color: #f1f1f1;
+}
+i.icon-social:hover{
+    color: #678e3e;
+}
+
+div.text-footer{
+    color: #f1f1f1;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 15px ;
+}
+
+div.text-footer>span{
+    color: #678e3e;
+}
